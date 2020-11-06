@@ -10,6 +10,8 @@ jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
+    - name: Check out this repo
+      uses: actions/checkout@v2
     - name: Stahni
       run: |-
         wget -q https://tgftp.nws.noaa.gov/data/observations/metar/stations/LKTB.TXT
